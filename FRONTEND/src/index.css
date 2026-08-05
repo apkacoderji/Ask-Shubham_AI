@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --color-canvas: 247 244 239;
+    --color-surface: 253 251 248;
+    --color-border: 230 221 211;
+    --color-ink: 43 42 40;
+    --color-ink-soft: 108 101 95;
+    --color-accent: 201 108 58;
+    --color-accent-soft: 209 128 84;
+    --color-accent-muted: 241 220 203;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-canvas: 24 22 20;
+    --color-surface: 32 29 26;
+    --color-border: 54 49 43;
+    --color-ink: 240 236 229;
+    --color-ink-soft: 163 155 145;
+    --color-accent: 224 137 90;
+    --color-accent-soft: 233 161 121;
+    --color-accent-muted: 61 41 28;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased transition-colors duration-200;
+    font-feature-settings: "ss01" 1, "cv01" 1;
+  }
+
+  ::selection {
+    @apply bg-accent-muted text-ink;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--color-border));
+    border-radius: 999px;
+    border: 2px solid rgb(var(--color-canvas));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--color-accent-muted));
+  }
+}
+
+@layer components {
+  .prose-assistant a {
+    @apply text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors;
+  }
+
+  .prose-assistant strong {
+    @apply font-semibold text-ink;
+  }
+
+  .prose-assistant code {
+    @apply bg-accent-muted/60 text-ink px-1.5 py-0.5 rounded font-mono text-[0.85em];
+  }
+
+  .prose-assistant pre {
+    @apply bg-[#211E1A] text-[#F3EEE7] rounded-lg p-4 overflow-x-auto my-3;
+  }
+
+  .prose-assistant pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+
+  .prose-assistant ul {
+    @apply list-disc pl-5 space-y-1 my-2;
+  }
+
+  .prose-assistant ol {
+    @apply list-decimal pl-5 space-y-1 my-2;
+  }
+
+  .prose-assistant p {
+    @apply my-2 leading-relaxed;
+  }
+
+  .prose-assistant p:first-child {
+    @apply mt-0;
+  }
+
+  .prose-assistant p:last-child {
+    @apply mb-0;
+  }
+
+  .prose-assistant h1,
+  .prose-assistant h2,
+  .prose-assistant h3 {
+    @apply font-semibold text-ink mt-4 mb-1.5;
+  }
+
+  .prose-assistant blockquote {
+    @apply border-l-2 border-accent/40 pl-3 italic text-ink-soft my-2;
+  }
+}

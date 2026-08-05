@@ -1,0 +1,206 @@
+# Candidate Profile - Shubham Negi
+
+> This document is intended to be used as the primary knowledge base for an AI recruiter chatbot.
+
+## Personal Information
+
+| Field | Value |
+|-------|-------|
+| Name | Shubham Negi |
+| Email | shubhamnegi041@gmail.com |
+| Phone | +91 8287971541 |
+| Location | Faridabad, India |
+| Degree | B.Tech in Computer Science Engineering |
+| College | JIMS Engineering Management Technical Campus (JEMTEC) |
+| University | GGSIPU |
+| Graduation Year | 2027 |
+| CGPA | 7.57/10 |
+
+## Professional Summary
+
+AI Engineering enthusiast with hands-on experience building LLM-powered applications using Python, FastAPI, and modern Generative AI tools. Passionate about backend development, prompt engineering, and scalable AI systems.
+
+## Technical Skills
+
+### Programming Languages
+- Python
+- Java
+- JavaScript
+- HTML
+- CSS
+
+### Python
+- Object-Oriented Programming
+- File Handling
+- Exception Handling
+- JSON
+- REST APIs
+- Multithreading
+- Asynchronous Programming
+- Pydantic
+
+### Frameworks & Libraries
+- FastAPI
+- LangChain
+- Pandas
+- NumPy
+
+### Generative AI
+- Large Language Models (LLMs)
+- Prompt Engineering
+- Few-shot Prompting
+- Ollama
+- API Integration
+
+### Developer Tools
+- Git
+- GitHub
+- Docker
+- Visual Studio Code
+
+### Core Computer Science
+- Data Structures & Algorithms
+- Object-Oriented Programming
+- Database Management Systems
+
+## Projects
+
+### AI Resume Parser
+
+**Overview**
+project link -> https://github.com/apkacoderji/resume-parser
+
+Built an AI-powered resume parser that extracts structured information from PDF resumes.
+
+**Key Features**
+- Extracts structured information from resumes
+- Converts unstructured text into JSON
+- Modular backend architecture
+- Regular-expression based field extraction
+- Robust error handling
+- Clean, maintainable code
+
+**Technologies**
+- Python
+- Regular Expressions
+- JSON
+
+**Skills Demonstrated**
+- Backend Development
+- Data Extraction
+- Text Processing
+- Software Architecture
+
+---
+
+### LinkedIn Post Generator using LLMs
+
+**Overview**
+project link -> https://github.com/apkacoderji/linkedIn-post-caption-generator
+
+Built an AI-powered LinkedIn post generator using Python and the Mistral API.
+
+**Key Features**
+- Generates professional LinkedIn posts
+- Few-shot prompting
+- Prompt engineering
+- Pydantic response validation
+- Modular architecture
+- JSON handling
+- API integration
+- Exception handling
+
+**Technologies**
+- Python
+- Mistral API
+- Pydantic
+- JSON
+
+**Skills Demonstrated**
+- LLM Application Development
+- Prompt Engineering
+- Backend Development
+- API Integration
+
+## Relevant Coursework
+
+- Data Structures & Algorithms
+- Python Programming
+- Object-Oriented Programming
+- Database Management Systems
+- Artificial Intelligence
+
+## Strengths
+
+- Python Development
+- Backend Engineering
+- FastAPI
+- LLM Integration
+- Prompt Engineering
+- Clean Code
+- API Development
+- JSON Processing
+- Software Design
+
+## Elevator Pitch
+
+I am a Computer Science Engineering student specializing in AI-powered backend applications. I enjoy building practical Generative AI solutions using Python, FastAPI, and LLMs. My projects focus on document intelligence, prompt engineering, structured data processing, and scalable backend systems.
+
+## Suggested Recruiter Questions
+
+- Tell me about Shubham.
+- What are his technical skills?
+- Which programming languages does he know?
+- Explain his AI Resume Parser project.
+- Explain his LinkedIn Post Generator.
+- What AI technologies has he worked with?
+- Does he know FastAPI?
+- Does he know LangChain?
+- Does he have backend development experience?
+- What is his education?
+- What is his CGPA?
+- Why should we hire him?
+- What are his strengths?
+- Does he have experience with APIs?
+- Does he have experience working with LLMs?
+
+## Soft Skills
+
+### Communication
+- Able to explain technical concepts clearly.
+- Comfortable discussing ideas and asking questions when needed.
+
+### Problem Solving
+- Enjoy breaking complex problems into smaller, manageable tasks.
+- Focus on understanding the root cause before implementing solutions.
+
+### Analytical Thinking
+- Approach problems logically and make decisions based on data and reasoning.
+
+### Team Collaboration
+- Enjoy working with others and sharing knowledge.
+- Open to feedback and willing to help teammates when possible.
+
+### Adaptability
+- Learn new technologies and tools quickly.
+- Comfortable adapting to changing project requirements.
+
+### Continuous Learning
+- Passionate about improving technical skills through hands-on projects, documentation, and online courses.
+- Always exploring new developments in AI and software engineering.
+
+### Time Management
+- Prioritize tasks effectively to balance academics, projects, and learning.
+
+### Attention to Detail
+- Focus on writing clean, readable, and maintainable code.
+- Careful about debugging, testing, and handling edge cases.
+
+### Ownership
+- Take responsibility for assigned tasks and strive to deliver high-quality work.
+- Willing to investigate issues independently before seeking help.
+
+### Growth Mindset
+- View challenges as opportunities to learn and improve.
+- Actively seek feedback to become a better engineer.
+"""
