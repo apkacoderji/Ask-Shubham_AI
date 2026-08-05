@@ -182,7 +182,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "https://your-project.vercel.app",
+    "https://ask-shubham-ai.vercel.app",
     ],
     allow_methods=["POST"],
     allow_headers=["Content-Type"],
