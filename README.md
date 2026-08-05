@@ -1,56 +1,49 @@
 # Ask Shubham AI 🤖
 
-An AI-powered hiring assistant that enables recruiters and hiring managers to interactively explore my profile through natural conversation.
+An AI powered hiring assistant that lets recruiters and hiring managers explore my candidacy through natural conversation instead of reading a static resume.
 
-Instead of reading an entire resume, users can ask questions about my education, technical skills, projects, and experience, and receive accurate, context-aware responses generated from my resume and structured candidate profile.
+Ask questions about my education, technical skills, projects, and experience, and get accurate, context aware answers grounded in my resume and a structured candidate profile, not hallucinated ones.
 
 ---
 
 ## Overview
 
-Ask Shubham AI is designed to make the hiring process more engaging by replacing static resume reading with an intelligent conversational experience.
-
-The assistant answers recruiter-focused questions while remaining grounded in verified information, ensuring accurate and reliable responses without hallucinating skills or experience.
+Ask Shubham AI replaces static resume reading with an interactive conversational experience for recruiters. It answers recruiter focused questions while staying grounded in verified information, so responses are accurate and reliable instead of invented.
 
 ---
 
 ## Features
 
-- AI-powered recruiter chatbot
-- Resume-aware responses
-- Structured resume parsing
-- Grounded responses using candidate profile and resume
-- Markdown formatted answers
+- AI powered recruiter chatbot with session based conversation memory (each session is isolated by a UUID)
+- Resume aware, grounded responses using a structured candidate profile
+- Custom resume parser with Pydantic validated structured extraction
 - Streaming AI responses for a smooth chat experience
+- Markdown formatted answers
 - Prompt injection resistance
-- Modern responsive user interface
-- Fast and lightweight backend using FastAPI
+- Modern, responsive user interface
+- Fast, lightweight FastAPI backend
 
 ---
 
 ## Tech Stack
 
-### Frontend
-
+**Frontend**
 - React
 - TypeScript
 - Vite
 
-### Backend
-
+**Backend**
 - Python
 - FastAPI
 - Pydantic
 
-### AI
-
+**AI**
 - Groq API
 - Llama 3.3 70B Versatile
 
-### Resume Processing
-
-- Custom Resume Parser
-- PDF Parsing
+**Resume Processing**
+- Custom resume parser
+- PDF parsing (pypdf)
 
 ---
 
@@ -58,54 +51,85 @@ The assistant answers recruiter-focused questions while remaining grounded in ve
 
 1. The application loads the candidate's resume.
 2. The resume is parsed into structured information.
-3. Additional candidate information is combined with the parsed resume.
-4. The AI receives recruiter questions along with the candidate context.
-5. Responses are streamed back to the user in real time while remaining grounded in the provided information.
+3. Additional candidate context is merged with the parsed resume.
+4. Recruiter questions are sent to the AI along with this candidate context and the session's conversation history.
+5. Responses stream back in real time, staying grounded in the provided information.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.11 or higher
+- Node.js 18 or higher
+- A Groq API key from console.groq.com
+
+### Backend Setup
+
+```bash
+git clone https://github.com/apkacoderji/Ask-Shubham_AI.git
+cd Ask-Shubham_AI/backend
+
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # macOS/Linux
+
+pip install -r requirements.txt
+
+echo "GROQ_API_KEY=your_key_here" > .env
+
+uvicorn main:app --reload
+```
+
+### Frontend Setup
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+Check your terminal output for the exact ports once both are running.
 
 ---
 
 ## Key Design Principles
 
-- Grounded AI responses
-- No hallucinated skills or experience
-- Professional recruiter-focused communication
+- Grounded AI responses, no hallucinated skills or experience
+- Professional, recruiter focused communication
 - Prompt injection resistance
-- Short, concise, and factual answers
+- Short, concise, factual answers
 - Modern conversational user experience
 
 ---
 
 ## Future Improvements
 
-- Conversation memory
-- Resume upload support
+- Resume upload support (currently loads a fixed resume)
 - Multiple candidate profiles
 - Voice interaction
 - Recruiter analytics dashboard
 - Authentication
 - Docker deployment
 - Cloud deployment
-- Conversation history
 
 ---
 
 ## Project Motivation
 
-Recruiters often spend only a few seconds reviewing a resume.
+Recruiters often spend only a few seconds reviewing a resume. Ask Shubham AI creates a more interactive hiring experience, letting recruiters instantly explore a candidate's background through conversation instead of manually scanning a document.
 
-Ask Shubham AI was built to create a more interactive hiring experience by allowing recruiters to instantly explore a candidate's background through conversation instead of manually scanning documents.
-
-The project also demonstrates practical experience with modern AI application development, backend engineering, API integration, prompt engineering, and full-stack development.
+The project also reflects hands on experience with AI application development, backend engineering, API integration, prompt engineering, and full stack development.
 
 ---
 
 ## Author
 
 **Shubham Negi**
+B.Tech Computer Science Engineering student, exploring AI Engineering
 
-B.Tech Computer Science Engineering Student
-
-AI & Software Engineer
+- GitHub: [@apkacoderji](https://github.com/apkacoderji)
+- Email: shubhamnegi041@gmail.com / ahh1976shubh@gmail.com
 
 ---
 
