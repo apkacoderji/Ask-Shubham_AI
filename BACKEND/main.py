@@ -181,7 +181,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+    "https://your-project.vercel.app",
+    ],
     allow_methods=["POST"],
     allow_headers=["Content-Type"],
 )
