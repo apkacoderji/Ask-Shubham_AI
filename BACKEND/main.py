@@ -128,7 +128,12 @@ messages = [{"role": "system", "content": system_prompt}]
 class ChatRequest(BaseModel):
     message: str
 
-
+@app.get("/")
+def home():
+    return {
+        "status": "online",
+        "message": "Ask Shubham AI Backend is running"
+    }
 
 @app.post("/chat")
 def chat(request: ChatRequest):
