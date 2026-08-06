@@ -65,6 +65,40 @@ AI Engineering enthusiast with hands-on experience building LLM-powered applicat
 
 ## Projects
 
+### ASK SHUBHAM.AI – AI Hiring Assistant
+
+**Overview**
+Project Link -> https://github.com/apkacoderji
+Live Demo -> https://ask-shubham-ai.vercel.app/
+
+An AI-powered recruiter chatbot that answers questions about my profile, skills, projects, education, and experience using Large Language Models.
+
+**Key Features**
+- Natural language Q&A about my profile
+- Resume-aware responses
+- FastAPI backend with REST APIs
+- LLM-powered conversational interface
+- Structured prompt engineering
+- JSON response handling
+- Responsive web interface
+- Error handling and fallback responses
+
+**Technologies**
+- Python
+- FastAPI
+- Groq API
+- Llama 3.x
+- HTML
+- CSS
+- JavaScript
+
+**Skills Demonstrated**
+- LLM Application Development
+- Prompt Engineering
+- API Development
+- Backend Development
+- AI Chatbot Development
+
 ### AI Resume Parser
 
 **Overview**
