@@ -13,7 +13,7 @@ if not my_api_key:
     raise ValueError("Something is wrong with api key")
 
 client = Groq(api_key=my_api_key)
-model = "llama-3.3-70b-versatile"
+model = "openai/gpt-oss-120b"
 
 
 def load_context(filepath: str) -> str:
